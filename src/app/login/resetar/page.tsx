@@ -1,9 +1,9 @@
-import LoginResetarForm from "@/components/login/login-resetar-form";
-import { Metadata } from "next";
+import LoginResetarForm from '@/components/login/login-resetar-form';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Resetar a senha | Dogs",
-  description: "Resete a sua senha",
+  title: 'Resetar a senha | Dogs',
+  description: 'Resete a sua senha',
 };
 
 type ResetarSearchParams = {

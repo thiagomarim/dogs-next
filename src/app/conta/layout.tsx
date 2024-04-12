@@ -1,4 +1,4 @@
-import ContaHeader from "@/components/conta/conta-header";
+import ContaHeader from '@/components/conta/conta-header';
 
 export default async function ContaLayout({
   children,

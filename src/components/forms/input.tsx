@@ -1,6 +1,6 @@
-import styles from "./input.module.css";
+import styles from './input.module.css';
 
-type InputProps = React.ComponentProps<"input"> & {
+type InputProps = React.ComponentProps<'input'> & {
   label: string;
   error?: string;
 };

@@ -1,4 +1,4 @@
-import styles from "./login.module.css";
+import styles from './login.module.css';
 
 export default async function LoginLayout({
   children,
