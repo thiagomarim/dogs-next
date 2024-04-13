@@ -27,6 +27,7 @@ export default async function RootLayout({
           <div className="App">
             <Header />
             <main className="AppBody">{children}</main>
+            <div>{modal}</div>
             <Footer />
           </div>
         </UserContextProvider>
