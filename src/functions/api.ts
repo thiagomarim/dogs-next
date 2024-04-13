@@ -7,15 +7,9 @@ export function TOKEN_POST() {
   };
 }
 
-export function TOKEN_VALIDATE_POST(token) {
+export function TOKEN_VALIDATE_POST() {
   return {
     url: API_URL + '/jwt-auth/v1/token/validate',
-    options: {
-      method: 'POST',
-      headers: {
-        Authorization: 'Bearer ' + token,
-      },
-    },
   };
 }
 
@@ -57,17 +51,9 @@ export function PHOTO_GET(id: string) {
   };
 }
 
-export function COMMENT_POST(id, body) {
+export function COMMENT_POST(id: string) {
   return {
     url: `${API_URL}/api/comment/${id}`,
-    options: {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
-      },
-      body: JSON.stringify(body),
-    },
   };
 }
 
@@ -92,11 +78,5 @@ export function PASSWORD_RESET() {
 export function STATS_GET() {
   return {
     url: API_URL + '/api/stats',
-    options: {
-      method: 'GET',
-      headers: {
-        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
-      },
-    },
   };
 }
