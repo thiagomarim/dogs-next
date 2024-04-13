@@ -1,6 +1,6 @@
-import photoGet from '@/actions/photo-get';
-import PhotoContent from '@/components/photo/photo-content';
-import { notFound } from 'next/navigation';
+import photoGet from "@/actions/photo-get";
+import PhotoContent from "@/components/photo/photo-content";
+import { notFound } from "next/navigation";
 
 type FotoIdParams = {
   params: {
@@ -11,7 +11,7 @@ type FotoIdParams = {
 export async function generateMetadata({ params }: FotoIdParams) {
   const { data } = await photoGet(params.id);
 
-  if (!data) return { titlte: 'Fotos' };
+  if (!data) return { titlte: "Fotos" };
   return {
     title: data.photo.title,
   };
